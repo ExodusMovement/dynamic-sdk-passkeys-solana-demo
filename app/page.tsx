@@ -7,7 +7,7 @@ import DynamicMethods from "@/app/components/Methods";
 import { createWallet } from '@passkeys/core';
 import './page.css';
 
-createWallet({ providers: { solana: { dangerouslyInjectWindow: true } }})
+createWallet({ providers: { solana: true }})
 
 const checkIsDarkSchemePreferred = () => {
   if (typeof window !== 'undefined') {
